@@ -1,103 +1,51 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
+/* RESPONSIVE FIXES AND LAYOUT ADJUSTMENTS */
+
+@media (max-width: 1200px) {
+  section { margin: 0 4rem; }
+}
+
+/* 2 per row on tablets, 1 per row on phones */
+@media (max-width: 1024px) {
+  .about-containers .details-container,
+  #projects .about-containers .details-container.color-container {
+    flex: 1 1 clamp(280px, 45%, 520px);   /* ~2 per row */
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
+@media (max-width: 640px) {
+  .about-containers .details-container,
+  #projects .about-containers .details-container.color-container {
+    flex: 1 1 100%;                        /* 1 per row */
   }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
+  footer .nav-links {
+    gap: 0.5rem 1rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
+
+@media (max-width: 900px) {
+  section { height: auto; margin: 0 1.25rem; padding-top: 8vh; }
+  #profile { flex-direction: column; gap: 2rem; height: auto; }
+  .section__pic-container { width: 260px; height: 260px; }
+  nav { height: 12vh; }
+}
+
+@media (max-width: 750px) {
+  .nav-links { display: none; }  /* rely on hamburger */
+  #hamburger-nav { display: flex; justify-content: space-between; align-items: center; padding: 0 1rem; }
+  #desktop-nav { display: none; }
+  .title { font-size: 2.2rem; }
+  .section__text__p2 { font-size: 1.25rem; }
+  .article-container { gap: 1.25rem; }
+  article { width: 8.5rem; }
+  .contact-info-upper-container { flex-direction: column; gap: .5rem; }
+  .xt__head { grid-template-columns: 40px minmax(0,1fr) auto; }
+  .xt__logo { width: 40px; height: 40px; }
+  .arrow { right: -2rem; bottom: 1.5rem; }
+}
+
+@media (max-width: 420px) {
+  .section__pic-container { width: 220px; height: 220px; }
+  .btn { width: 7.2rem; padding: .9rem; }
+  .theme-toggle.mobile { position: relative; right: 0; }
 }
