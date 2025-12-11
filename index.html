@@ -5,48 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Basic SEO -->
-  <title>Saurabh Kumar | Full Stack Software Developer</title>
+  <title>Saurabh Kumar | Project Associate IIT Ropar</title>
   <meta name="description" content="Saurabh Kumar is a Full Stack Software Developer skilled in Flutter, Node.js, and modern web technologies. Explore my projects, experience, and contact me for collaboration." />
-  <meta name="keywords" content="Saurabh Kumar, Software Developer, Full Stack Developer, Flutter, Node.js, Portfolio, Web Developer, Mobile App Developer" />
+  <meta name="keywords" content="Saurabh Kumar, Software Developer, Full Stack Developer, Flutter, Node.js, Portfolio" />
   <meta name="author" content="Saurabh Kumar" />
-  <link rel="icon" type="image/png" href="assets/education.png" />
+  <link rel="icon" href="assets/favicon.ico" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Saurabh Kumar | Software Developer Portfolio" />
+  <meta property="og:title" content="Saurabh Kumar | Project Associate IIT Ropa" />
   <meta property="og:description" content="Explore my experience and projects as a Full Stack Developer skilled in Flutter, Node.js, and more." />
   <meta property="og:url" content="https://saurabh-codes.onrender.com/" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Saurabh Kumar | Full Stack Software Developer" />
+  <meta name="twitter:title" content="Saurabh Kumar | Project Associate IIT Ropa" />
   <meta name="twitter:description" content="Portfolio showcasing my skills in Flutter, Node.js, and full-stack development." />
 
-  <!-- Favicon -->
-  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://saurabh-codes.onrender.com/" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
-
 <body>
   <!-- Desktop Nav -->
   <nav id="desktop-nav">
     <div class="logo">Saurabh Kumar</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <!-- Theme Toggle -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
   </nav>
 
@@ -54,9 +42,7 @@
   <nav id="hamburger-nav">
     <div class="logo">Saurabh Kumar</div>
     <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="hamburger-icon" onclick="toggleMenu()"><span></span><span></span><span></span></div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -64,7 +50,6 @@
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
-    <!-- Theme Toggle (mobile) -->
     <button class="theme-toggle mobile" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
   </nav>
 
@@ -82,42 +67,47 @@
         <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/saurabh-linkdin/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/SaurHub123'" />
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/saurabh-linkdin/'" />
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/SaurHub123'" />
       </div>
     </div>
   </section>
 
   <!-- About -->
   <section id="about" data-reveal="up">
-    <p class="section__text__p1">Get To Know More</p>
+    <!-- <p class="section__text__p1">Get To Know More</p> -->
     <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
+
+    <!-- MOBILE-FRIENDLY STACK (no overlap) -->
+    <div class="section-container about-stack">
+      <div class="section__pic-container about-media">
         <img src="./assets/about-pic-removebg-preview.png" alt="Profile picture" class="about-pic" />
       </div>
+
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Experience</h3>
-            <p>1+ years <br />Software Development</p>
+            <p>1+ years<br/>Software Development</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
             <h3>Education</h3>
-            <p>MCA Masters Degree<br />BCA Bachelors Degree</p>
+            <p>MCA<br/>CHandigarh University</p>
           </div>
         </div>
+
         <div class="text-container">
           <p>
             I'm Saurabh Kumar, a Project Associate-I at iHub-AWaDH, IIT Ropar, working on LLM and RAG-based AI systems.
             I build scalable web and mobile applications using Flutter, Node.js, and AWS, with experience in healthcare and management platforms. 
-            Alongside my full-time role, I also work as a freelance developer, helping clients build efficient, user-focused digital solutions.
+            Alongside my full-time role, I also work as a freelance developer, helping clients build efficient, user-focused digital solutions
           </p>
         </div>
       </div>
     </div>
+
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
 
@@ -125,9 +115,7 @@
   <section id="xp-timeline" class="xt" aria-labelledby="xt-heading" data-reveal="up">
     <div class="xt__container">
       <h2 class="xt__heading" id="xt-heading">Professional Experience</h2>
-
       <ol class="xt__timeline" role="list">
-        <!-- Latest -->
         <li class="xt__item">
           <div class="xt__card">
             <header class="xt__head">
@@ -148,7 +136,6 @@
           </div>
         </li>
 
-        <!-- Older -->
         <li class="xt__item">
           <div class="xt__card">
             <header class="xt__head">
@@ -157,12 +144,10 @@
                 <h3 class="xt__role">Mobile App Developer</h3>
                 <p class="xt__company">HBCH&RC New Chandigarh</p>
               </div>
-              <p class="xt__dates">June 2024 – Oct 2025</p>
+              <p class="xt__dates">March 2024 – Oct 2025</p>
             </header>
             <ul class="xt__list">
-              <li class="xt__chips">
-                <span>Flutter</span><span>Node.js</span><span>IBM AS/400</span>
-              </li>
+              <li class="xt__chips"><span>Flutter</span><span>Node.js</span><span>IBM AS/400</span></li>
               <li>Enhanced app features with backend integration using Node.js.</li>
               <li>Optimized app performance and fixed bugs.</li>
             </ul>
@@ -172,37 +157,21 @@
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Skills/Experience -->
   <section id="experience" data-reveal="up">
-    <p class="section__text__p1">Explore My</p>
+    <!-- <p class="section__text__p1">Explore My</p> -->
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
       <div class="about-containers">
-
         <!-- Languages -->
         <div class="details-container">
           <h2 class="experience-sub-title">Languages</h2>
           <div class="article-container">
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/dart.png" alt="dart" />
-              <div><h3>Dart</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="c-plus-plus-logo" />
-              <div><h3>C / C++</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png" alt="java" />
-              <div><h3>Java</h3><p>Beginner</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript" />
-              <div><h3>JavaScript</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/typescript.png" alt="typescript" />
-              <div><h3>TypeScript</h3><p>Intermediate</p></div>
-            </article>
+            <article><img src="https://img.icons8.com/color/48/dart.png" alt="dart" /><div><h3>Dart</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="c++" /><div><h3>C / C++</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png" alt="java" /><div><h3>Java</h3><p>Beginner</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript" /><div><h3>JavaScript</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/typescript.png" alt="typescript" /><div><h3>TypeScript</h3><p>Intermediate</p></div></article>
           </div>
         </div>
 
@@ -210,22 +179,10 @@
         <div class="details-container">
           <h2 class="experience-sub-title">Frameworks</h2>
           <div class="article-container">
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/flutter.png" alt="flutter" />
-              <div><h3>Flutter</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" />
-              <div><h3>Node.js</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="40" height="40" src="https://img.icons8.com/offices/40/express-js.png" alt="express-js" />
-              <div><h3>Express.js</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/nextjs.png" alt="nextjs" />
-              <div><h3>Next.js</h3><p>Beginner</p></div>
-            </article>
+            <article><img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" /><div><h3>Flutter</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" /><div><h3>Node.js</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/offices/40/express-js.png" alt="express-js" /><div><h3>Express.js</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/nextjs.png" alt="nextjs" /><div><h3>Next.js</h3><p>Beginner</p></div></article>
           </div>
         </div>
 
@@ -233,38 +190,14 @@
         <div class="details-container">
           <h2 class="experience-sub-title">Tools & Platforms</h2>
           <div class="article-container">
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git" />
-              <div><h3>Git</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/ios-filled/50/github.png" alt="github" />
-              <div><h3>GitHub Actions (CI/CD)</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://images.seeklogo.com/logo-png/27/2/pm2-logo-png_seeklogo-273807.png" alt="pm2" />
-              <div><h3>PM2</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/terraform.png" alt="terraform" />
-              <div><h3>Terraform</h3><p>Beginner</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/clouds/48/cloud.png" alt="render" />
-              <div><h3>Render</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="32" height="32" src="https://img.icons8.com/windows/32/windows-10.png" alt="windows-iis" />
-              <div><h3>Windows IIS Server</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="24" height="24" src="https://img.icons8.com/color/48/firebase.png" alt="firebase" />
-              <div><h3>Firebase</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="aws" />
-              <div><h3>AWS (S3, RDS, EC2)</h3><p>Intermediate</p></div>
-            </article>
+            <article><img src="https://img.icons8.com/color/48/git.png" alt="git" /><div><h3>Git</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/ios-filled/50/github.png" alt="github" /><div><h3>GitHub Actions (CI/CD)</h3><p>Intermediate</p></div></article>
+            <article><img src="https://images.seeklogo.com/logo-png/27/2/pm2-logo-png_seeklogo-273807.png" alt="pm2" /><div><h3>PM2</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/terraform.png" alt="terraform" /><div><h3>Terraform</h3><p>Beginner</p></div></article>
+            <article><img src="https://img.icons8.com/clouds/48/cloud.png" alt="render" /><div><h3>Render</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/windows/32/windows-10.png" alt="windows-iis" /><div><h3>Windows IIS Server</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/firebase.png" alt="firebase" /><div><h3>Firebase</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="aws" /><div><h3>AWS (S3, RDS, EC2)</h3><p>Intermediate</p></div></article>
           </div>
         </div>
 
@@ -272,38 +205,27 @@
         <div class="details-container">
           <h2 class="experience-sub-title">Databases</h2>
           <div class="article-container">
-            <article>
-              <img width="48" height="48" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png" alt="mongodb" />
-              <div><h3>MongoDB</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="32" height="32" src="https://img.icons8.com/windows/32/postgreesql.png" alt="postgresql" />
-              <div><h3>PostgreSQL</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="32" height="32" src="https://img.icons8.com/windows/32/mysql.png" alt="mysql" />
-              <div><h3>MySQL</h3><p>Intermediate</p></div>
-            </article>
-            <article>
-              <img width="32" height="32" src="https://img.icons8.com/ios-filled/50/database.png" alt="db2" />
-              <div><h3>IBM DB2</h3><p>Intermediate</p></div>
-            </article>
+            <article><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png" alt="mongodb" /><div><h3>MongoDB</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/windows/32/postgreesql.png" alt="postgresql" /><div><h3>PostgreSQL</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/windows/32/mysql.png" alt="mysql" /><div><h3>MySQL</h3><p>Intermediate</p></div></article>
+            <article><img src="https://img.icons8.com/ios-filled/50/database.png" alt="db2" /><div><h3>IBM DB2</h3><p>Intermediate</p></div></article>
           </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
       </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </div>
   </section>
 
   <!-- Projects -->
   <section id="projects" data-reveal="up">
-    <p class="section__text__p1">Browse My Recent</p>
+    <!-- <p class="section__text__p1">Browse My Recent</p> -->
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/waste2wealth.png" alt="Project 1" class="project-img" />
+            <img src="./assets/waste2wealth.png" alt="waste2wealth" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">waste2wealth</h2>
           <div class="btn-container">
@@ -314,7 +236,7 @@
 
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/TMC Punjab Saarthi.png" alt="Project 2" class="project-img" />
+            <img src="./assets/TMC Punjab Saarthi.png" alt="TMC Punjab Saarthi" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">TMC Punjab Saarthi</h2>
           <div class="btn-container">
@@ -325,7 +247,7 @@
 
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/Select Sports.jpg" alt="Project 3" class="project-img" />
+            <img src="./assets/Select Sports.jpg" alt="Select Sports" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Select Sports</h2>
           <div class="btn-container">
@@ -336,7 +258,7 @@
 
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/nQueens.png" alt="Project 4" class="project-img" />
+            <img src="./assets/nQueens.png" alt="N-Queen Games" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">N-Queen Games</h2>
           <div class="btn-container">
@@ -351,7 +273,7 @@
 
   <!-- Contact -->
   <section id="contact" data-reveal="up">
-    <p class="section__text__p1">Get in Touch</p>
+    <!-- <p class="section__text__p1">Get in Touch</p> -->
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
@@ -376,7 +298,7 @@
         </ul>
       </div>
     </nav>
-    <p>Last updated: <span id="last-updated">Dec 12, 2025</span></p>
+    <p>Last updated: <span id="last-updated">May 17, 2025</span></p>
     <p>Copyright &#169; 2025 Saurabh Kumar. All Rights Reserved.</p>
   </footer>
 
@@ -387,15 +309,9 @@
     "@type": "Person",
     "name": "Saurabh Kumar",
     "url": "https://saurabh-codes.onrender.com/",
-    "sameAs": [
-      "https://www.linkedin.com/in/saurabh-linkdin/",
-      "https://github.com/SaurHub123"
-    ],
+    "sameAs": ["https://www.linkedin.com/in/saurabh-linkdin/", "https://github.com/SaurHub123"],
     "jobTitle": "Software Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Freelancer/Company"
-    }
+    "worksFor": { "@type": "Organization", "name": "Freelancer/Company" }
   }
   </script>
 
